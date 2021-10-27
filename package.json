@@ -1,0 +1,25 @@
+{
+  "name": "teste-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "./node_modules/.bin/cypress open",
+    "cy:start": "./node_modules/.bin/cypress run --spec 'cypress/integration/teste-ui/teste_ui.spec.js'",
+    "cy:merge": "mochawesome-merge 'cypress/report/*.json' > mochawesome.json",
+    "cy:html": "marge mochawesome.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.7.0",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "cypress": "^8.6.0",
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

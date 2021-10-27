@@ -1,0 +1,247 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 6,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-10-26T22:57:50.054Z",
+    "end": "2021-10-26T22:58:18.143Z",
+    "duration": 28089,
+    "testsRegistered": 8,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cb11ca49-91ca-4df6-9e78-7f525343e1f1",
+      "title": "",
+      "fullFile": "cypress/integration/teste-ui/teste_ui.spec.js",
+      "file": "cypress/integration/teste-ui/teste_ui.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d706c5db-92ef-4f70-ae9e-9772db531aa4",
+          "title": "testeui",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Switch de testes: Testar os casos do site da Pichau ",
+              "fullTitle": "testeui Switch de testes: Testar os casos do site da Pichau ",
+              "timedOut": null,
+              "duration": 8774,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.pichau.com.br\");\ncy.wait(1000);",
+              "err": {},
+              "uuid": "0c1f40cd-3249-4f89-8150-92cc70b0198c",
+              "parentUUID": "d706c5db-92ef-4f70-ae9e-9772db531aa4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Teste com botão de acessar a todos os departamentos",
+              "fullTitle": "testeui Teste com botão de acessar a todos os departamentos",
+              "timedOut": null,
+              "duration": 1948,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.MuiGrid-grid-md-4 > .MuiButtonBase-root').click();\ncy.wait(1000);",
+              "err": {},
+              "uuid": "f2e0a24b-fd51-4ec5-8c2a-fea838db003d",
+              "parentUUID": "d706c5db-92ef-4f70-ae9e-9772db531aa4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Teste para verificar um texto do departamento de hardware",
+              "fullTitle": "testeui Teste para verificar um texto do departamento de hardware",
+              "timedOut": null,
+              "duration": 1202,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(4) > :nth-child(1) > .jss109 > .MuiListItemText-root > .MuiTypography-root').should(\"contain.text\", \"Hardware\");\ncy.wait(1000);",
+              "err": {},
+              "uuid": "64ee8cda-ee2b-4c12-8a87-875a8e1da884",
+              "parentUUID": "d706c5db-92ef-4f70-ae9e-9772db531aa4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Teste no botão de monitores",
+              "fullTitle": "testeui Teste no botão de monitores",
+              "timedOut": null,
+              "duration": 2116,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(4) > :nth-child(4)').click();\ncy.wait(1000);",
+              "err": {},
+              "uuid": "24f4171d-d55a-4bbd-beae-cff0c34253fa",
+              "parentUUID": "d706c5db-92ef-4f70-ae9e-9772db531aa4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Teste no botão de montar a configuração",
+              "fullTitle": "testeui Teste no botão de montar a configuração",
+              "timedOut": null,
+              "duration": 4939,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.jss353 > .MuiListItem-root').click();\ncy.wait(1000);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.jss353 > .MuiListItem-root`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.jss353 > .MuiListItem-root`, but never found it.\n    at Context.eval (https://www.pichau.com.br/__cypress/tests?p=cypress\\integration\\teste-ui\\teste_ui.spec.js:118:8)",
+                "diff": null
+              },
+              "uuid": "a6e75cb1-6d32-4f6c-8c07-2ca2f98995e1",
+              "parentUUID": "d706c5db-92ef-4f70-ae9e-9772db531aa4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Teste no botão de fechar a aba",
+              "fullTitle": "testeui Teste no botão de fechar a aba",
+              "timedOut": null,
+              "duration": 4369,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.MuiPaper-root > .MuiButtonBase-root > .MuiIconButton-label > .MuiSvgIcon-root > path').click();\ncy.wait(1000);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.MuiPaper-root > .MuiButtonBase-root > .MuiIconButton-label > .MuiSvgIcon-root > path`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.MuiPaper-root > .MuiButtonBase-root > .MuiIconButton-label > .MuiSvgIcon-root > path`, but never found it.\n    at Context.eval (https://www.pichau.com.br/__cypress/tests?p=cypress\\integration\\teste-ui\\teste_ui.spec.js:122:8)",
+                "diff": null
+              },
+              "uuid": "b09dd45c-6cb2-4598-992e-6e0032f1bfd4",
+              "parentUUID": "d706c5db-92ef-4f70-ae9e-9772db531aa4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Teste no botão de criar conta",
+              "fullTitle": "testeui Teste no botão de criar conta",
+              "timedOut": null,
+              "duration": 587,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('strong > [href=\"/account\"]').click();",
+              "err": {},
+              "uuid": "f6f4b9e9-6354-4c56-be8a-009ef6aa4440",
+              "parentUUID": "d706c5db-92ef-4f70-ae9e-9772db531aa4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Teste de criar a conta, com aviso de erro ",
+              "fullTitle": "testeui Teste de criar a conta, com aviso de erro ",
+              "timedOut": null,
+              "duration": 1500,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type(\"Chris\");\ncy.get('#password').type(\"123\");\ncy.get('[data-cy=login-submit]').click();\ncy.get('#alert-dialog-title > .MuiTypography-root').should(\"contain.text\", \"Autenticação\");",
+              "err": {},
+              "uuid": "a8a8cad6-c216-43db-9d91-5a5177991b92",
+              "parentUUID": "d706c5db-92ef-4f70-ae9e-9772db531aa4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c1f40cd-3249-4f89-8150-92cc70b0198c",
+            "f2e0a24b-fd51-4ec5-8c2a-fea838db003d",
+            "64ee8cda-ee2b-4c12-8a87-875a8e1da884",
+            "24f4171d-d55a-4bbd-beae-cff0c34253fa",
+            "f6f4b9e9-6354-4c56-be8a-009ef6aa4440",
+            "a8a8cad6-c216-43db-9d91-5a5177991b92"
+          ],
+          "failures": [
+            "a6e75cb1-6d32-4f6c-8c07-2ca2f98995e1",
+            "b09dd45c-6cb2-4598-992e-6e0032f1bfd4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 25435,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
